@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>وخشه | فروشگاه آنلاین</title>
+  <meta name="description" content="وخشه، فروشگاه آنلاین محصولات اصیل و باکیفیت با ارسال سریع به سراسر کشور.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="وخشه">
+        <span class="logo__mark">و</span>
+        <span class="logo__text">وخشه</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home">خانه</a>
+        <a href="#products">محصولات</a>
+        <a href="#features">چرا وخشه؟</a>
+        <a href="#about">درباره ما</a>
+        <a href="#contact">تماس</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="cartBtn" aria-label="سبد خرید">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+          <span class="badge" id="cartCount">۰</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="منو">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="pill">ارسال رایگان برای خرید بالای ۳٬۰۰۰ افغانی</span>
+          <h1>محصولات اصیل و باکیفیت،<br><span class="accent">درب خانه شما</span></h1>
+          <p>از صنایع دستی و لباس سنتی تا خشکبار و زعفران ناب؛ هر آنچه می‌خواهید را با اطمینان از وخشه بخرید.</p>
+          <div class="hero__cta">
+            <a href="#products" class="btn btn--primary">مشاهده محصولات</a>
+            <a href="#about" class="btn btn--ghost">آشنایی با ما</a>
+          </div>
+          <div class="stats">
+            <div><strong>+۵۰۰</strong><span>محصول</span></div>
+            <div><strong>+۱۲٬۰۰۰</strong><span>مشتری راضی</span></div>
+            <div><strong>۲۴/۷</strong><span>پشتیبانی</span></div>
+          </div>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="float-card float-card--a">🧣<span>شال دست‌باف</span></div>
+          <div class="float-card float-card--b">🌸<span>زعفران ناب</span></div>
+          <div class="float-card float-card--c">🏺<span>سفال دست‌ساز</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2>محصولات ما</h2>
+            <p class="muted">بهترین‌ها را برای شما انتخاب کرده‌ایم</p>
+          </div>
+          <div class="search">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="searchInput" placeholder="جستجوی محصول...">
+          </div>
+        </div>
+
+        <div class="filters" id="filters"></div>
+        <div class="grid" id="productGrid"></div>
+        <p class="empty" id="emptyState" hidden>محصولی با این مشخصات پیدا نشد.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="features">
+      <div class="container">
+        <h2 class="center">چرا از وخشه خرید کنیم؟</h2>
+        <div class="features">
+          <div class="feature"><div class="feature__icon">🚚</div><h3>ارسال سریع</h3><p>تحویل در کابل طی ۲۴ ساعت و ولایات دیگر در ۳ تا ۵ روز.</p></div>
+          <div class="feature"><div class="feature__icon">✅</div><h3>ضمانت اصالت</h3><p>همه محصولات مستقیماً از تولیدکنندگان معتبر تهیه می‌شوند.</p></div>
+          <div class="feature"><div class="feature__icon">↩️</div><h3>بازگشت آسان</h3><p>تا ۷ روز امکان بازگرداندن کالا بدون هیچ سؤالی.</p></div>
+          <div class="feature"><div class="feature__icon">💬</div><h3>پشتیبانی همیشگی</h3><p>تیم ما در تمام ساعات شبانه‌روز پاسخگوی شماست.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__art" aria-hidden="true">🛍️</div>
+        <div>
+          <h2>درباره وخشه</h2>
+          <p>وخشه با هدف رساندن محصولات اصیل و دست‌ساز هنرمندان و تولیدکنندگان محلی به دست مشتریان در سراسر کشور و جهان راه‌اندازی شده است.</p>
+          <p>ما باور داریم که خرید آنلاین باید ساده، مطمئن و لذت‌بخش باشد. به همین دلیل روی کیفیت محصولات، بسته‌بندی مناسب و پشتیبانی دوستانه تمرکز کرده‌ایم.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div>
+          <h2>با ما در تماس باشید</h2>
+          <p class="muted">سؤال، پیشنهاد یا انتقادی دارید؟ خوشحال می‌شویم از شما بشنویم.</p>
+          <ul class="contact__list">
+            <li>📍 کابل، شهر نو</li>
+            <li>📞 <span dir="ltr">+93 700 000 000</span></li>
+            <li>✉️ info@wakhshe.com</li>
+          </ul>
+        </div>
+        <form class="form" id="contactForm">
+          <input required name="name" placeholder="نام شما">
+          <input required name="email" type="email" placeholder="ایمیل" dir="ltr">
+          <textarea required name="message" rows="4" placeholder="پیام شما"></textarea>
+          <button class="btn btn--primary" type="submit">ارسال پیام</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo"><span class="logo__mark">و</span><span class="logo__text">وخشه</span></a>
+      <p>© <span id="year"></span> وخشه. تمامی حقوق محفوظ است.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer__head">
+      <h3>سبد خرید</h3>
+      <button class="icon-btn" id="closeCart" aria-label="بستن">✕</button>
+    </div>
+    <div class="drawer__body" id="cartItems"></div>
+    <div class="drawer__foot">
+      <div class="total"><span>مجموع:</span><strong id="cartTotal">۰ ؋</strong></div>
+      <button class="btn btn--primary btn--block" id="checkoutBtn">ادامه و پرداخت</button>
+    </div>
+  </aside>
+
+  <!-- Checkout modal -->
+  <div class="modal" id="checkoutModal" hidden>
+    <div class="modal__box">
+      <button class="icon-btn modal__close" id="closeModal" aria-label="بستن">✕</button>
+      <h3>تکمیل سفارش</h3>
+      <form class="form" id="checkoutForm">
+        <input required name="name" placeholder="نام و تخلص">
+        <input required name="phone" type="tel" placeholder="شماره تماس" dir="ltr">
+        <input required name="city" placeholder="شهر / ولایت">
+        <textarea required name="address" rows="3" placeholder="آدرس کامل"></textarea>
+        <label class="radio"><input type="radio" name="pay" value="cod" checked> پرداخت هنگام تحویل</label>
+        <button class="btn btn--primary btn--block" type="submit">ثبت سفارش</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
